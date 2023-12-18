@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <h1>CONTACT US !</h1>
+    <h2>hubungi kami untuk informasi lebih lanjut</h2>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .gallery-item {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            opacity: 0; /* Awalnya diatur menjadi tidak terlihat */
+        }
+
+        img {
+            max-width: 100%;
+            height: 170px  ;
+            border: 3px solid #3498db;
+            border-radius: 10px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery-item animate__animated" id="item1">
+    <img src="jojopoto.jpg" alt="Gambar 1">
+    <p><a href="https://www.instagram.com/grachamchandra?igshid=MzMyNGUyNmU2YQ==">Joyce Prisca Gloria Dawa</a></p>
+</div>
+
+<div class="gallery-item animate__animated" id="item2">
+    <img src="anissapoto.jpg" alt="Gambar 2">
+    <p><a href="https://instagram.com/anissasahda_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">Anissa Sahda Aulia</a></p>
+</div>
+
+<div class="gallery-item animate__animated" id="item3">
+    <img src="rambupoto.jpg" alt="Gambar 3">
+    <p><a href="https://www.instagram.com/rambu_anaya?utm_source=qr">Rambu Anaya Samapaty</a></p>
+</div>
+
+<script>
+    // Menggunakan JavaScript untuk menambahkan efek animasi setelah halaman dimuat
+    document.addEventListener("DOMContentLoaded", function () {
+        animateGalleryItems();
+    });
+
+    function animateGalleryItems() {
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        // Menggunakan forEach untuk menambahkan class "animate__fadeIn" ke setiap item
+        galleryItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.style.opacity = 1; // Mengatur opacity menjadi 1 untuk membuatnya terlihat
+                item.classList.add("animate__fadeIn"); // Menambahkan efek fadeIn dari library Animate.css
+            }, index * 500); // Menambahkan delay sebesar index * 500ms
+        });
+    }
+</script>
+<footer>
+  <nav>
+      <a href="https://IamJhojo79.github.io/Presentasi_PWC/index.html"href="#" class="my-button">Beranda</a>
+      <a href="https://IamJhojo79.github.io/Presentasi_PWC/presentasiPWC.html"href="#" class="my-button">This is our vacation</a>
+  </nav>
+</body>
+</html>

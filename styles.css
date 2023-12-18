@@ -1,0 +1,85 @@
+/* Reset beberapa margin dan padding default pada elemen HTML */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mengatur gaya umum untuk body */
+body {
+  font-family: 'time new roman';
+  background-color: #2c3e50;
+  color: #333;
+}
+
+/* Mengatur gaya untuk header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Mengatur gaya untuk container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2c3e42;
+  color : #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur gaya untuk destination */
+.destination {
+  margin-bottom: 20px;
+}
+
+/* Mengatur gaya untuk footer */
+footer {
+  background-color: gray;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Mengatur gaya untuk navigation di footer */
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* Mengatur gaya untuk tombol di navigation */
+.my-button {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* Mengatur gaya untuk gambar */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+        .my-button {
+          display: block;
+          padding: 5px 10px;
+          font-size: 16px;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          border: 2px solid black;
+          color: black;
+          border-radius: 2px;
+          transition: background-color 0.3s;
+        }
+    
+        /* Hover effect */
+        .my-button:hover {
+          background-color: #3498;
+          color: #fff;
+        }
